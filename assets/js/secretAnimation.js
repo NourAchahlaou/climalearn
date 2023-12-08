@@ -8,12 +8,17 @@
   ctx.fillStyle = "red";
   ctx.fillRect(canvas.width - 50,canvas.height- 50,100 , 100);
   
+  var player1Sprite = new Image();
+  player1Sprite.src = '../animations/walkAnimation/walk1.png';
+
+  var player2Sprite = new Image();
+  player2Sprite.src = '../animations/walkAnimation/walk1.png';
+
   var player1 = {
     x: 50,
     y: canvas.height / 2,
     width: 50,
     height: 50,
-    color: 'red',
     speed: 5,
     currentFrame: 0,
     frames: 8,
@@ -25,7 +30,6 @@
     y: canvas.height / 2,
     width: 50,
     height: 50,
-    color: 'blue',
     speed: 5,
     isJumping: false,
     jumpHeight: 100,
@@ -37,13 +41,16 @@
 
 
   function drawPlayer(player) {
-    var frameWidth = spriteSheet.width / player.frames;
+    playerSprite = player === player1 ? player1Sprite : player2Sprite;
+    var frameWidth = playerSprite.width / player.frames;
+    
+    console.log(playerSprite);
     ctx.drawImage(
-      spriteSheet,
+      playerSprite,
       frameWidth * player.currentFrame,
       0,
       frameWidth,
-      spriteSheet.height,
+      playerSprite.height,
       player.x,
       player.y,
       player.width,
