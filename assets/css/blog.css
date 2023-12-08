@@ -51,6 +51,8 @@ footer .linkBtnGroup {
   display: flex;
   gap: 20px;
 }
+p h3 h4 {font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;}
 
 footer .linkBtnGroup .btnLink {
   color:#fff;
@@ -71,4 +73,48 @@ footer .linkBtnGroup .btnLink {
   max-width: 600px;
   margin: auto;
   flex-direction: column;
+  color: #fff;
+  
+}
+
+.postContent {
+  padding-top: 100px;
+}
+
+.postContentLendingContainer {
+  backdrop-filter: blur(10px) brightness(50%) saturate(.5);
+}
+
+.postContentWrapper .postLanding h1 {
+  font-size: 55px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.postContentWrapper .postLanding h5 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+  font-style: italic;
+
+}
+
+.postContent {
+  max-width: 600px;
+  margin: auto;
+}
+
+.imgContainer img{
+  display: block;
+  width: 100%;
+}
+
+.imgContainer .imgDescription {
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  font-size: 14px;
+  display: block;
 }
