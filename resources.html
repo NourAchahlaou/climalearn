@@ -11,6 +11,13 @@
     <header>
         <h1>Climate Change Resources</h1>
     </header>
+<!-- Example: Button to trigger text-to-speech -->
+<button id="readAloudButton">Read Aloud</button>
+
+<!-- Example: Content to be read aloud -->
+<dic id="contentToRead">
+  Your content goes here. This is the text that will be read aloud.
+</dic>
 
     <section class="content">
         <p>Explore the following resources for more information on climate change:</p>
@@ -30,4 +37,23 @@
         <a href="index.html">Back to Home</a>
     </footer>
 </body>
+<script>
+    // Check for browser support
+if ('speechSynthesis' in window) {
+    // Select elements
+    const readAloudButton = document.getElementById('readAloudButton');
+    const contentToRead = document.getElementById('contentToRead');
+  
+    // Event listener for the button
+    readAloudButton.addEventListener('click', function () {
+      // Create a SpeechSynthesisUtterance
+      const speech = new SpeechSynthesisUtterance();
+      speech.text = contentToRead.textContent;
+  
+      // Use the SpeechSynthesis API to speak the content
+      window.speechSynthesis.speak(speech);
+    });
+  }
+  
+</script>
 </html>
