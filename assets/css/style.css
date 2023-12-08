@@ -1,7 +1,7 @@
 /**
-* Template Name: Maxim
+* Template Name: climalearn
 * Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+* Template URL: https://bootstrapmade.com/climalearn-free-onepage-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
